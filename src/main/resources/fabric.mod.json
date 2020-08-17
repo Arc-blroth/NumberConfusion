@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "numberconfusion",
+  "version": "${version}",
+
+  "name": "Number Confusion",
+  "description": "I'm suprised that you've made it here",
+  "authors": [
+    "Arc'blroth"
+  ],
+
+  "license": "GPL-3.0",
+  "icon": "assets/numberconfusion/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "gfh:prePreLaunch": [
+      "ai.arcblroth.numberconfusion.Owo"
+    ]
+  },
+
+  "depends": {
+    "fabricloader": ">=0.7.8",
+    "minecraft": "*"
+  }
+
+}
