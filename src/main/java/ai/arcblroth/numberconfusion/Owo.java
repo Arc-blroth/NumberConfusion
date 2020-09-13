@@ -12,12 +12,12 @@ import java.util.Collections;
 
 public class Owo implements PrePreLaunch {
 
-    public static final boolean shuffleInts   = true;
-    public static final boolean shuffleBytes  = true;
-    public static final boolean shuffleShorts = true;
-    public static final boolean shuffleLongs  = true;
-    public static final boolean shuffleChars  = true;
-    public static final boolean swapBooleans  = true;
+    public static final boolean shuffleInts   = System.getProperty("numberconfusion.shuffleInts", "true").equals("true");    
+    public static final boolean shuffleBytes  = System.getProperty("numberconfusion.shuffleBytes", "true").equals("true");
+    public static final boolean shuffleShorts = System.getProperty("numberconfusion.shuffleShorts", "true").equals("true");
+    public static final boolean shuffleLongs  = System.getProperty("numberconfusion.shuffleLongs", "true").equals("true");
+    public static final boolean shuffleChars  = System.getProperty("numberconfusion.shuffleChars", "true").equals("true");
+    public static final boolean swapBooleans  = System.getProperty("numberconfusion.swapBooleans", "true").equals("true");
 
     @Override
     public void onPrePreLaunch() {
